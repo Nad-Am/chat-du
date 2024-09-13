@@ -9,3 +9,5 @@ function getData(key) {
 function clearLocal() {
     localStorage.clear();
 }
+
+const webBAS_URL = '/chat-du/'

@@ -2,7 +2,7 @@ async function getme () {
     const me = await getmemory(getData("Authorization"))
     if(me.code !== 0) {
         alert(me.msg);
-        location.href = "./login.html";
+        location.href = webBAS_URL + "login.html";
         return
     }
     creatEl(me.data).forEach(element => {
