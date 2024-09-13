@@ -46,5 +46,5 @@ document.querySelector(".re").onsubmit = async function (e) {
     }
     const respon = await regct(logId,logName,pswd);
     console.log(respon)
-    location.href = 'login.html'
+    location.href = './login.html'
 }

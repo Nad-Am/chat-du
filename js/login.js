@@ -9,5 +9,5 @@ document.querySelector(".login").onsubmit = async (e) => {
         document.querySelector(".mes").innerHTML = respon.msg;
         return
     }
-    window.location.href = "chat.html";
+    window.location.href = "./chat.html";
 }
