@@ -1,0 +1,154 @@
+body{
+    background-color: aquamarine;
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    position: fixed;
+    left: 10rem;
+    right: 15rem;
+    top: 5rem;
+    bottom: 5rem;
+    background-color: rgb(239, 234, 228);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.context{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    width: 85%;
+    height: 75%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.mes{
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    background-color: aliceblue;
+    padding: 8px 10px 8px 10px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    width: auto;
+    max-width: 50%;
+}
+.rob::after{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    content: "TA";
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: absolute;
+    top: 8px;
+    left: -35px;
+    background-color: brown;
+}
+.rob::before{
+    content: "";
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid aliceblue;
+    position: absolute;
+    left: -20px;
+}
+.peo{
+    align-self:flex-end;
+    background-color: rgb(172, 224, 224);
+}
+.peo::after{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    content: "我";
+    width: 25px;
+    height: 25px;
+    margin-left: 0.5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    background-color: rgb(113, 182, 215);
+}
+.peo::before{
+    content: "";
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid aliceblue;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 100%;
+}
+.sendmes{
+    position: relative;
+    width: 80%;
+    height: 15%;
+    background-color: white;
+}
+#mesg {
+    width: 100%;
+    height: 60%;
+    border: none;
+    resize: none;
+}
+#mesg:focus{
+    outline: none;          /* 移除默认的聚焦样式 */
+}
+.send{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+button{
+    position: relative;
+}
+.prompt{
+    position: absolute;
+    width: 120px;
+    padding: 0.5rem;
+    background-color: rgb(244, 235, 235);
+    bottom: 2.5rem;
+    right: 0;
+    border-radius: 0.5rem;
+}
+.prompt::after{
+    content: "";
+    position: absolute;
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgb(244, 235, 235);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 100%;
+    right: 1rem;
+}
+.non{
+    display: none;
+}
+.end{
+    position: fixed;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background-color: red;
+    text-align: center;
+    border-radius: 1rem;
+    bottom: 3rem;
+    right: 3rem;
+}

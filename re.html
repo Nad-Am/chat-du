@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/man.css">
+    <style>
+        .re {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%,-50%);
+            padding: 1rem 4rem 1rem 4rem;
+            width: 30rem;
+            height: 25rem;
+            border-radius: 60px;
+            background-color: rgba(204, 163, 163,0.5);
+        }
+    </style>
+</head>
+<body>
+    <form class="re">
+        <h3>用户注册</h3>
+        <h5>用户ID</h5>
+        <input type="text" name="logId" id="logId" placeholder="请输入用户id" maxlength="10">
+        <p class="err"></p>
+        <h5>用户名</h5>
+        <input type="text" name="logname" id="logName" placeholder="请输入用户名" maxlength="10">
+        <p class="err"></p>
+        <h5>密码</h5>
+        <input type="password" id="logpswd" placeholder="请输入密码" maxlength="10">
+        <p class="err"></p>
+        <h5>密码验证</h5>
+        <input type="password" id="relogpswd" placeholder="请再次输入密码" maxlength="10">
+        <p class="err"></p>
+        <button class="a">注册</button>
+    </form>
+</body>
+<script src="./js/ueser.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/fied.js"></script>
+<script src="./js/re.js"></script>
+</html>

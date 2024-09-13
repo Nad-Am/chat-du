@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/man.css">
+    <style>
+        .login{
+            position: absolute;
+            top: 40%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 25rem;
+            height: 20rem;
+            border-radius: 1rem;
+            background-color: antiquewhite;
+            padding: 1rem 1rem;
+        }
+        input{
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <form class="login">
+        <h3>登录</h3>
+        <h5>账号ID</h5>
+        <input type="text" id="reid" placeholder="请输入用户id" maxlength="10">
+        <h5>账号密码</h5>
+        <input type="password" id="repswd" placeholder="请输入密码" maxlength="10">
+        <p class="mes"></p>
+        <button>登录</button>
+    </form>
+</body>
+<script src="./js/ueser.js"></script>
+<script src="./js/api.js"></script>
+<script  src="./js/login.js"></script>
+</html>
